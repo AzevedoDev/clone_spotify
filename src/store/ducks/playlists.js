@@ -13,7 +13,7 @@ export default function Playlists(state = INITIAL_STATE, action) {
     case Types.GET_REQUEST:
       return { ...state, loading: true };
     case Types.GET_SUCCESS:
-      return { ...state, loading: true, data: action.payload.data };
+      return { ...state, loading: false, data: action.payload.data };
     default:
       return state;
   }
